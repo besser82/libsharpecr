@@ -3,6 +3,10 @@
 
 AC_PREREQ([2.69])
 AC_INIT([libsharpecr], [0.0.1], [besser82@fedoraproject.org])
+AC_CONFIG_MACRO_DIRS([m4])
+
+AM_INIT_AUTOMAKE([1.15 silent-rules foreign dist-xz])
+AM_SILENT_RULES([no])
 
 # Checks for programs.
 
@@ -14,4 +18,5 @@ AC_INIT([libsharpecr], [0.0.1], [besser82@fedoraproject.org])
 
 # Checks for library functions.
 
+AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
